@@ -1,0 +1,12 @@
+<div id="pageTitle" class="container text-center">
+    <h1>Episodes List</h1>
+</div>
+<div class="container">
+    <div id="Episodes-List" class="row itemBlock">
+        <div class="itemContainer col-md-3 col-sm-6 col-12" *ngFor="let episode of episodes" [episode] = "episode">
+            <a id="select-ep" routerLink="/details" (click)="select(episode)">{{episode.name}}</a>
+            <p>{{episode.air_date}}</p>
+            <button id="ep-fav-btn" (click)="favorite(episode)">Favorite</button>
+        </div>
+    </div>
+</div>

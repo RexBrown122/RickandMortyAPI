@@ -1,0 +1,33 @@
+<!-- <nav class="navbar navbar-light bg-light">
+  <div>
+    <ul class="navbar-nav mr-auto">
+      <li><a routerLink='' class="navbar-item">Home</a></li>
+      <li><a routerLink='/favorites' id="fav-route-btn" class="navbar-item">Favorites</a></li>
+    </ul>
+  </div>
+  <div id="search">
+    <app-search></app-search>
+  </div>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink=''>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="fav-route-btn" routerLink='/favorites'>Favorites</a>
+      </li>
+    </ul>
+    <div class="search">
+      <app-search></app-search>
+    </div>
+  </div>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>

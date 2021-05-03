@@ -1,0 +1,7 @@
+<div>
+    <app-episode-list [episodes]="episodes"></app-episode-list>
+    <div class="container text-center">
+        <button (click)="last()" [disabled]="info.prev == null" id="last" class="btn btn-primary">Last</button>
+        <button (click)="next()" [disabled]="info.next == null" id="next" class="btn btn-primary">Next</button>
+    </div>
+</div>

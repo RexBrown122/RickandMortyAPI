@@ -1,0 +1,64 @@
+1. Create a home/landing page
+    2. have a home button
+1. Create a container/list component for the episodes.
+    2. Display name/thumbnail
+    2. Create a favorite button
+1. Create a component to display individual episodes.
+    2. Display episode name
+    2. Have a back button
+1. Create a service to fetch episodes from the Rick and Morty API.
+1. Create a model for `Episode` based on the API schematics.
+    2. This CLASS should store all information returned
+1. Inject the service into the list component. 
+
+----------------------------------------------------------------------------------
+
+Create a new task list for the following criteria:
+- Given a list of episodes
+- When I select an episode
+- Then I can view the details page for it.
+
+Task List:
+1. Make a details component
+2. Create a container to display the episode details
+3. Have a back button to return to home page
+
+-----------------------------------------------------------------------------------
+
+Create a new task list for the following criteria:
+- Given an episode
+- When I view the details page 
+- Then I can see all episode information and the characters featured in it.
+
+Task List:
+1. 
+
+-----------------------------------------------------------------------------------
+
+**As a user, I can search the episodes so that I can find what I'm looking for.**
+
+- Given I enter a search term 
+- When I submit the form 
+- Then I can view all matching results
+
+-----------------------------------------------------------------------------------
+
+Angular Objects Needed:
+
+Routing Module
+Episode CLASS - Store data for each episode
+RcikAndMorty SERVICE - HTTP getter for website
+Favorites SERVICE - handle favorites local storage
+Main Page COMPONENT - Holds the list of the episodes
+Favorites COMPONENT - Holds the favorites list of episodes
+Episode Details COMPONENT - Displays the information on the episode
+
+Navigation Bar BOOTSTRAP?
+Search Bar COMPONENT?
+
+----------------------------------------------------------------------------------
+
+TODO:
+- Test Favorites Service and Component
+- Test Search?
+- Test the filter?? characters in rick and morty service

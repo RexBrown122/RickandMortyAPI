@@ -1,0 +1,7 @@
+<div>
+    <form [formGroup]='searchForm' id='search-form'>
+        <input formControlName="search_string" id="searchBox">
+        
+        <button id="search-btn" routerLink="/results" [queryParams]="{name: searchForm.controls.search_string.value}" >Search</button>
+    </form>
+</div>
